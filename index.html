@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--HTML5を使う宣言（開き方を制限）-->
+<html lang="ja">
+    <!--日本語のページであると宣言（誤翻訳予防）-->
+    <!--HTML全体の開始-->
+
+    <head>
+        <!--画面に表示しない設定を書く場所-->
+        
+        <meta name="robots" content="noindex,nofollow">
+        <!--検索に乗らないよう設定-->
+        <meta charset="UTF-8">
+        <!--metaタグのcharset設定/ページの文字コードを設定（文字化け予防）-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--metaタグのname設定/スマホで正しいサイズで表示される-->
+
+        <title>ゲーム-メインメニュー</title>
+        <!--ブラウザのタブに表示されるタイトルを記載-->
+        <link rel="stylesheet" href="style.css">
+        <!--外部CSSファイル（style.css）を読み込む-->
+    </head>
+    
+    <body>
+
+        <!--1．パスワード画面-->
+        <div id="password-screen">
+            <h2>ログインコードを入力してください</h2>
+            <input type="password" id="password-input" placeholder="パスワード">
+            <button id="password-btn">送信</button>
+            <p id="password-error" style="color:red; display: none;">
+                パスワードが違います
+            </p>
+        </div>
+
+        <!--2．メニュー画面-->
+        <div id="main-screen" style="display: none;">
+            <!--メニュー画面全体のコンテナ-->
+            <div class="menu-container">
+            <!--メニュー画面のコンテナを宣言-->
+                <h1 class="menu-title">メインメニュー</h1>
+                <!--画面上部の見出しをメインメニューに設定-->
+                <div class="menu-buttons">
+                <!--ボタンを並べる範囲-->
+                    <button class="menu-btn" id="story-btn">
+                    <!--メニューボタンクラスのストリーメニュー-->
+                        ストーリーメニュー
+                    </button>
+                    <button class="menu-btn" id="quiz-btn">
+                        グラフクイズ
+                    </button>
+                    <button class="menu-btn" id="log-btn">
+                        プレイログ
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
