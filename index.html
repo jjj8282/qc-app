@@ -54,6 +54,33 @@
                 </div>
             </div>
         </div>
+
+        <!--クイズ画面（最初は非表示）-->
+        <div id ="quiz-screen" style="display: none;">
+            <h1 id="question-count" class="question-count"></h1>
+            <!--問題画像-->
+            <div class="question-area">
+                <img id="question-image" src="images_graph/問題1.png" alt="問題画像">
+            </div>
+            <!--問かけ-->
+            <p class="question-text">このデータに最適なグラフは？</p>
+            <!--選択肢ボタン-->
+            <div class="choice-area">
+                
+                <button class="choice-btn" data-choice="1">
+                    <img src="images_graph/折れ線ボタン.png" alt="選択肢1">
+                </button>
+                <button class="choice-btn" data-choice="2">
+                    <img src="images_graph/棒ボタン.png" alt="選択肢2">
+                </button>
+                <button class="choice-btn" data-choice="3">
+                    <img src="images_graph/円ボタン.png" alt="選択肢3">
+                </button>
+                <button class="choice-btn" data-choice="4">
+                    <img src="images_graph/ヒストグラムボタン.png" alt="選択肢4">
+                </button>
+            </div>
+        </div>
         <script src="script.js"></script>
     </body>
 
