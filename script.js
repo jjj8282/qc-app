@@ -31,6 +31,7 @@ const questions = [
             "images_graph/ヒストグラムボタン.png"
         ],
         //正解画像
+        correct:"images_graph/折れ線ボタン.png",
         correctGraph:"images_graph/問1正解.png",
         //不正解
         wrongPages:{
