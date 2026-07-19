@@ -31,7 +31,7 @@ const questions = [
             "images_graph/ヒストグラムボタン.png"
         ],
         //正解画像
-        correct: "images_graph/折れ線ボタン.png",
+        correctGraph:"images_graph/問1正解.png",
         //不正解
         wrongPages:{
             "images_graph/棒ボタン.png":{
@@ -112,7 +112,7 @@ function showCorrectScreen(){
     //タイトル変更
     document.getElementById("answer-title").textContent = "○正解○";
     document.getElementById("answer-graph").src = 
-        shuffleQuestion[currentIndex].correct;
+        shuffleQuestion[currentIndex].correctGraph;
     document.getElementById("answer-comment").innerHTML=
         "（解説）<br>時間による変化を表すデータなので折れ線グラブが最適！<br>増減や傾向が一目でわかりやすいですね。";
 }
