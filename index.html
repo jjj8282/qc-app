@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <!--第1問回答画面-->
+        <!--回答画面-->
         <div id="answer-screen" style="display: none;">
             <h1 id="answer-title"></h1>
             <img  id="answer-graph" src="" alt="グラフ画像">
@@ -90,7 +90,19 @@
             <button id="next-btn">次へ</button>
         </div>
 
+        <!--クイズ結果画面-->
+        <div id="result-screen" style="display: none;">
+            <h1 id="result-title">～結果発表～</h1>
+
+            <!--結果の枠-->
+            <div id="result-box">
+                <p id="result-text">10問中　0問正解</p>
+            </div>
+            <button id="return-btn">メニューへ戻る</button>
+        </div>
+
         <script src="script.js"></script>
+        
     </body>
 
 </html>
